@@ -5,7 +5,8 @@
   "main": "initialize.js",
   "scripts": {
     "test": "jest --watchAll --detectOpenHandles",
-    "start": "node initialize.js"
+    "start": "set NODE_ENV=development&& node initialize.js",
+    "start-prod": "set NODE_ENV=production&& node initialize.js"
   },
   "engines":{
     "node": "16.13.0"
